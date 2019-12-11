@@ -17,7 +17,7 @@ class CreateEntriesTable extends Migration
             $table->bigIncrements('id');
             $table->unsignedBigInteger('dictionary_id');
             $table->string('word');
-            $table->text('definition');
+            $table->longText('definition')->nullable();
             $table->timestamps();
         });
     }

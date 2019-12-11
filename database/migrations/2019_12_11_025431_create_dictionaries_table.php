@@ -18,6 +18,8 @@ class CreateDictionariesTable extends Migration
             $table->unsignedBigInteger('source_language_id');
             $table->unsignedBigInteger('target_language_id');
             $table->string('name');
+            $table->string('english_name');
+            $table->string('color');
             $table->text('details')->nullable();
             $table->string('author')->nullable();
             $table->timestamps();
