@@ -8,8 +8,13 @@ class Language extends Model
 {
     protected $guarded = [];
 
-    public function dictionaries()
+    public function sourceDictionaries()
     {
-        return $this->hasMany(Dictionary::class);
+        return $this->hasMany(Dictionary::class, 'source_language_id');
+    }
+
+    public function targetDictionaries()
+    {
+        return $this->hasMany(Dictionary::class, 'target_language_id');
     }
 }
