@@ -54,9 +54,10 @@
                 box-sizing: border-box;
                 border: 3px solid #aaa;
                 border-radius: 5px;
-                padding: 1em;
+                padding: .5em;
                 width: 100%;
                 font-family: 'Vazir', sans-serif;
+                font-size: 1.5em;
             }
             .search-bar .has-results {
                 border-radius: 5px 5px 0 0;
@@ -80,6 +81,13 @@
             .autocomplete li {
                 list-style: none;
                 padding: 5px 10px;
+            }
+            .list-selected {
+                background: #d0f0ff;
+            }
+            .definition {
+                margin-top: 1em;
+                font-size: 1.5em;
             }
         </style>
 </head>
