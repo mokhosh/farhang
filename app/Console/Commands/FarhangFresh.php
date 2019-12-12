@@ -37,7 +37,7 @@ class FarhangFresh extends Command
         $this->info('Importing Dehkhoda dictionary.');
 
         $farsi = Language::where('name', 'فارسی')->first();
-        $dehkhoda = $farsi->sourceDictionaries()->create([
+        $dehkhoda = $farsi->sourceDictionaries()->firstOrCreate([
             'target_language_id' => $farsi->id,
             'name' => 'دهخدا',
             'english_name' => 'Dehkhoda',
