@@ -102,9 +102,6 @@
             <div class="content">
                 <h1 class="app-name">{{ config('app.name') }}</h1>
                 @livewire('search-bar')
-                @foreach(DB::connection('dehkhoda')->table('t01')->inRandomOrder()->limit(10)->get() as $entry)
-                    {{--{{ $entry->word }}--}}
-                @endforeach
             </div>
         </div>
         @livewireAssets

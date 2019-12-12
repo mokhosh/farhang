@@ -35,13 +35,13 @@ return [
 
     'connections' => [
 
-        'dehkhoda' => [
+        /*'dehkhoda' => [
             'driver' => 'sqlite',
             'url' => env('DATABASE_URL'),
             'database' => database_path('dehkhoda.db'),
             'prefix' => '',
             'foreign_key_constraints' => env('DB_FOREIGN_KEYS', true),
-        ],
+        ],*/
 
         'moein' => [
             'driver' => 'sqlite',
